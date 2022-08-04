@@ -1,0 +1,21 @@
+{
+    "data": {
+        "type": "nationalCapitals",
+        "id": "1",
+        "attributes": {
+            "description": "National capital of the Netherlands",
+            "name": "Amsterdam"
+        },
+        "relationships": {
+            "countries": {
+                "links": {
+                    "self": "\/nationalCapitals\/1\/relationships\/countries",
+                    "related": "\/nationalCapitals\/1\/countries"
+                }
+            }
+        },
+        "links": {
+            "self": "\/nationalCapitals\/1"
+        }
+    }
+}

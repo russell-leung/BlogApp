@@ -1,0 +1,76 @@
+{
+    "data": {
+        "type": "countries",
+        "id": "2",
+        "attributes": {
+            "code": "BG",
+            "dummyCounter": 22222,
+            "name": "Bulgaria"
+        },
+        "relationships": {
+            "currency": {
+                "links": {
+                    "self": "\/countries\/2\/relationships\/currency",
+                    "related": "\/countries\/2\/currency"
+                },
+                "data": {
+                    "type": "currencies",
+                    "id": "1"
+                }
+            },
+            "nationalCapital": {
+                "links": {
+                    "self": "\/countries\/2\/relationships\/nationalCapital",
+                    "related": "\/countries\/2\/nationalCapital"
+                },
+                "data": {
+                    "type": "nationalCapitals",
+                    "id": "2"
+                }
+            },
+            "cultures": {
+                "links": {
+                    "self": "\/countries\/2\/relationships\/cultures",
+                    "related": "\/countries\/2\/cultures"
+                },
+                "data": [
+                    {
+                        "type": "cultures",
+                        "id": "2"
+                    },
+                    {
+                        "type": "cultures",
+                        "id": "3"
+                    }
+                ]
+            },
+            "nationalCities": {
+                "links": {
+                    "self": "\/countries\/2\/relationships\/nationalCities",
+                    "related": "\/countries\/2\/nationalCities"
+                }
+            },
+            "subcountries": {
+                "links": {
+                    "self": "\/countries\/2\/relationships\/subcountries",
+                    "related": "\/countries\/2\/subcountries"
+                }
+            },
+            "supercountry": {
+                "links": {
+                    "self": "\/countries\/2\/relationships\/supercountry",
+                    "related": "\/countries\/2\/supercountry"
+                }
+            },
+            "languages": {
+                "links": {
+                    "self": "\/countries\/2\/relationships\/languages",
+                    "related": "\/countries\/2\/languages"
+                }
+            }
+        },
+        "links": {
+            "self": "\/countries\/2"
+        }
+    }
+}

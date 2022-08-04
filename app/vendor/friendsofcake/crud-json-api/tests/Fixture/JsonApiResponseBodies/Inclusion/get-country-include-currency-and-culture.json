@@ -1,0 +1,117 @@
+{
+    "data": {
+        "type": "countries",
+        "id": "1",
+        "attributes": {
+            "code": "NL",
+            "dummyCounter": 11111,
+            "name": "The Netherlands"
+        },
+        "relationships": {
+            "currency": {
+                "links": {
+                    "self": "\/countries\/1\/relationships\/currency",
+                    "related": "\/countries\/1\/currency"
+                },
+                "data": {
+                    "type": "currencies",
+                    "id": "1"
+                }
+            },
+            "nationalCapital": {
+                "links": {
+                    "self": "\/countries\/1\/relationships\/nationalCapital",
+                    "related": "\/countries\/1\/nationalCapital"
+                },
+                "data": {
+                    "type": "nationalCapitals",
+                    "id": "1"
+                }
+            },
+            "cultures": {
+                "links": {
+                    "self": "\/countries\/1\/relationships\/cultures",
+                    "related": "\/countries\/1\/cultures"
+                },
+                "data": [
+                    {
+                        "type": "cultures",
+                        "id": "1"
+                    }
+                ]
+            },
+            "nationalCities": {
+                "links": {
+                    "self": "\/countries\/1\/relationships\/nationalCities",
+                    "related": "\/countries\/1\/nationalCities"
+                }
+            },
+            "subcountries": {
+                "links": {
+                    "self": "\/countries\/1\/relationships\/subcountries",
+                    "related": "\/countries\/1\/subcountries"
+                }
+            },
+            "supercountry": {
+                "links": {
+                    "self": "\/countries\/1\/relationships\/supercountry",
+                    "related": "\/countries\/1\/supercountry"
+                }
+            },
+            "languages": {
+                "links": {
+                    "self": "\/countries\/1\/relationships\/languages",
+                    "related": "\/countries\/1\/languages"
+                }
+            }
+        },
+        "links": {
+            "self": "\/countries\/1"
+        }
+    },
+    "included": [
+        {
+            "type": "currencies",
+            "id": "1",
+            "attributes": {
+                "code": "EUR",
+                "name": "Euro"
+            },
+            "relationships": {
+                "countries": {
+                    "links": {
+                        "self": "\/currencies\/1\/relationships\/countries",
+                        "related": "\/currencies\/1\/countries"
+                    }
+                }
+            },
+            "links": {
+                "self": "\/currencies\/1"
+            }
+        },
+        {
+            "type": "cultures",
+            "id": "1",
+            "attributes": {
+                "anotherDummyCounter": 11111,
+                "code": "nl-NL",
+                "name": "Dutch"
+            },
+            "relationships": {
+                "country": {
+                    "links": {
+                        "self": "\/cultures\/1\/relationships\/country",
+                        "related": "\/cultures\/1\/country"
+                    },
+                    "data": {
+                        "type": "countries",
+                        "id": "1"
+                    }
+                }
+            },
+            "links": {
+                "self": "\/cultures\/1"
+            }
+        }
+    ]
+}

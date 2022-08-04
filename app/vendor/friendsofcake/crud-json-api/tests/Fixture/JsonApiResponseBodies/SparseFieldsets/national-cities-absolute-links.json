@@ -1,0 +1,58 @@
+{
+    "meta": {
+        "record_count": 6,
+        "page_count": 3,
+        "page_limit": 2
+    },
+    "links": {
+        "self": "http:\/\/test-server\/nationalCities?page=2&limit=2",
+        "first": "http:\/\/test-server\/nationalCities?page=1&limit=2",
+        "last": "http:\/\/test-server\/nationalCities?page=3&limit=2",
+        "prev": "http:\/\/test-server\/nationalCities?page=1&limit=2",
+        "next": "http:\/\/test-server\/nationalCities?page=3&limit=2"
+    },
+    "data": [
+        {
+            "type": "nationalCities",
+            "id": "3",
+            "attributes": {
+                "name": "Sofia"
+            },
+            "relationships": {
+                "country": {
+                    "links": {
+                        "self": "\/countries\/2"
+                    },
+                    "data": {
+                        "type": "countries",
+                        "id": "2"
+                    }
+                }
+            },
+            "links": {
+                "self": "\/nationalCities\/3"
+            }
+        },
+        {
+            "type": "nationalCities",
+            "id": "4",
+            "attributes": {
+                "name": "Plovdiv"
+            },
+            "relationships": {
+                "country": {
+                    "links": {
+                        "self": "\/countries\/2"
+                    },
+                    "data": {
+                        "type": "countries",
+                        "id": "2"
+                    }
+                }
+            },
+            "links": {
+                "self": "\/nationalCities\/4"
+            }
+        }
+    ]
+}

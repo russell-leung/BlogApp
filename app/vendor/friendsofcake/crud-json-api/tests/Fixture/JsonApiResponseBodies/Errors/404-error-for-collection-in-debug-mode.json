@@ -1,0 +1,10 @@
+{
+    "errors": [
+        {
+            "status": "404",
+            "title": "Not Found",
+            "detail": "A route matching \"\/nonexistents\" could not be found."
+        }
+    ],
+    "debug": {}
+}

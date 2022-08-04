@@ -1,0 +1,10 @@
+{
+    "data": {
+        "type": "countries",
+        "attributes": {
+            "code": "NL",
+            "name": "The Netherlands",
+            "dummyCounter": 11111
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "data": {
+        "type": "nationalCapitals",
+        "id": "6",
+        "attributes": {
+            "description": "National capital of the cinematic world",
+            "name": "Hollywood"
+        },
+        "relationships": {
+            "countries": {
+                "links": {
+                    "self": "\/nationalCapitals\/6\/relationships\/countries",
+                    "related": "\/nationalCapitals\/6\/countries"
+                }
+            }
+        },
+        "links": {
+            "self": "\/nationalCapitals\/6"
+        }
+    }
+}

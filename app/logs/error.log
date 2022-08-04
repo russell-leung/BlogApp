@@ -1,0 +1,541 @@
+2022-07-25 12:15:35 error: [TypeError] Argument 1 passed to Cake\Utility\Security::setSalt() must be of the type string, null given, called in /var/www/config/bootstrap.php on line 164 in /var/www/vendor/cakephp/cakephp/src/Utility/Security.php on line 307
+Stack Trace:
+- /var/www/config/bootstrap.php:164
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:173
+- /var/www/src/Application.php:44
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/webroot/index.php:40
+
+
+
+2022-07-25 12:15:38 error: [TypeError] Argument 1 passed to Cake\Utility\Security::setSalt() must be of the type string, null given, called in /var/www/config/bootstrap.php on line 164 in /var/www/vendor/cakephp/cakephp/src/Utility/Security.php on line 307
+Stack Trace:
+- /var/www/config/bootstrap.php:164
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:173
+- /var/www/src/Application.php:44
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/webroot/index.php:40
+
+
+
+2022-07-25 12:17:18 error: [TypeError] Argument 1 passed to Cake\Utility\Security::setSalt() must be of the type string, null given, called in /var/www/config/bootstrap.php on line 164 in /var/www/vendor/cakephp/cakephp/src/Utility/Security.php on line 307
+Stack Trace:
+- /var/www/config/bootstrap.php:164
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:173
+- /var/www/src/Application.php:44
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/webroot/index.php:40
+
+
+
+2022-08-04 12:27:30 error: [InvalidArgumentException] Subject must be an instance of `Authentication\AuthenticationServiceInterface` or `Authentication\AuthenticationServiceProviderInterface`, `App\Application` given. in /var/www/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php on line 87
+Stack Trace:
+- /var/www/src/Application.php:103
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:83
+- /var/www/webroot/index.php:40
+
+
+
+2022-08-04 12:27:58 error: [Error] Call to a member function resources() on null in /var/www/config/routes.php on line 115
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php:950
+- /var/www/config/routes.php:119
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:198
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:113
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:102
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:85
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:133
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /articles.json
+Client IP: 172.18.0.1
+
+
+2022-08-04 12:28:01 warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/vendor/cakephp/cakephp/src/Error/Debugger.php line=988 in [/var/www/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 71]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 128
+[main] - ROOT/webroot/index.php, line 40
+
+2022-08-04 12:28:01 warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/vendor/cakephp/cakephp/src/Error/Debugger.php:988) in [/var/www/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 168]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 128
+[main] - ROOT/webroot/index.php, line 40
+
+2022-08-04 12:28:01 warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/vendor/cakephp/cakephp/src/Error/Debugger.php:988) in [/var/www/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 201]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 201
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 128
+[main] - ROOT/webroot/index.php, line 40
+
+2022-08-04 12:28:01 warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/vendor/cakephp/cakephp/src/Error/Debugger.php:988) in [/var/www/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 201]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 201
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 128
+[main] - ROOT/webroot/index.php, line 40
+
+2022-08-04 12:28:29 error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location. in /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php on line 270
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php:357
+- /var/www/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php:287
+- /var/www/vendor/cakephp/cakephp/src/Event/EventManager.php:309
+- /var/www/vendor/cakephp/cakephp/src/Event/EventManager.php:286
+- /var/www/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php:92
+- /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php:636
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:130
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:164
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /articles.json
+Client IP: 172.18.0.1
+
+
+2022-08-04 12:29:55 error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token from either the request body or request headers did not match or is missing. in /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 417
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:170
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /articles.json
+Client IP: 172.18.0.1
+
+
+2022-08-04 12:56:59 error: [Cake\Http\Exception\MissingControllerException] Controller class Articles. could not be found. in /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Articles.',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:334
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:72
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:315
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /articles./1json
+Client IP: 172.20.0.1
+
+
+2022-08-04 13:00:06 error: [InvalidArgumentException] The `Groups` association is not defined on `Users`.
+Valid associations are: Articles in /var/www/vendor/cakephp/cakephp/src/ORM/Table.php on line 905
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/ORM/EagerLoader.php:489
+- /var/www/vendor/cakephp/cakephp/src/ORM/EagerLoader.php:314
+- /var/www/vendor/cakephp/cakephp/src/ORM/EagerLoader.php:445
+- /var/www/vendor/cakephp/cakephp/src/ORM/EagerLoader.php:416
+- /var/www/vendor/cakephp/cakephp/src/ORM/Query.php:1177
+- /var/www/vendor/cakephp/cakephp/src/ORM/Query.php:1127
+- /var/www/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:200
+- /var/www/vendor/cakephp/cakephp/src/Database/Connection.php:280
+- /var/www/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /var/www/vendor/cakephp/cakephp/src/Database/Connection.php:287
+- /var/www/vendor/cakephp/cakephp/src/Database/Connection.php:335
+- /var/www/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /var/www/vendor/cakephp/cakephp/src/Database/Connection.php:340
+- /var/www/vendor/cakephp/cakephp/src/Database/Query.php:250
+- /var/www/vendor/cakephp/cakephp/src/ORM/Query.php:1148
+- /var/www/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php:288
+- /var/www/vendor/cakephp/cakephp/src/ORM/Query.php:1096
+- /var/www/vendor/cakephp/cakephp/src/Datasource/Paginator.php:180
+- /var/www/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:186
+- /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php:856
+- /var/www/src/Controller/UsersController.php:136
+- /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php:539
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /users.json
+Client IP: 172.20.0.1
+
+
+2022-08-04 13:00:19 error: [Cake\Http\Exception\MissingControllerException] Controller class User could not be found. in /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'User',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:315
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /user/login.json
+Client IP: 172.20.0.1
+
+
+2022-08-04 13:00:27 error: [Cake\Http\Exception\MissingControllerException] Controller class User could not be found. in /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'User',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:315
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /user/login.json
+Client IP: 172.20.0.1
+
+
+2022-08-04 13:00:49 error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login.json() could not be found, or is not accessible. in /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php on line 518
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login.json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:135
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /users/login.json
+Client IP: 172.20.0.1
+
+
+2022-08-04 13:02:23 error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login.json() could not be found, or is not accessible. in /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php on line 518
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login.json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:135
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /users/login.json
+Client IP: 172.20.0.1
+
+
+2022-08-04 13:03:10 error: [InvalidArgumentException] The `Groups` association is not defined on `Users`.
+Valid associations are: Articles in /var/www/vendor/cakephp/cakephp/src/ORM/Table.php on line 905
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/ORM/EagerLoader.php:489
+- /var/www/vendor/cakephp/cakephp/src/ORM/EagerLoader.php:314
+- /var/www/vendor/cakephp/cakephp/src/ORM/EagerLoader.php:445
+- /var/www/vendor/cakephp/cakephp/src/ORM/EagerLoader.php:416
+- /var/www/vendor/cakephp/cakephp/src/ORM/Query.php:1177
+- /var/www/vendor/cakephp/cakephp/src/ORM/Query.php:1127
+- /var/www/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:200
+- /var/www/vendor/cakephp/cakephp/src/Database/Connection.php:280
+- /var/www/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /var/www/vendor/cakephp/cakephp/src/Database/Connection.php:287
+- /var/www/vendor/cakephp/cakephp/src/Database/Connection.php:335
+- /var/www/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /var/www/vendor/cakephp/cakephp/src/Database/Connection.php:340
+- /var/www/vendor/cakephp/cakephp/src/Database/Query.php:250
+- /var/www/vendor/cakephp/cakephp/src/ORM/Query.php:1148
+- /var/www/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php:288
+- /var/www/vendor/cakephp/cakephp/src/ORM/Query.php:1096
+- /var/www/vendor/cakephp/cakephp/src/Datasource/Paginator.php:180
+- /var/www/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:186
+- /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php:856
+- /var/www/src/Controller/UsersController.php:146
+- /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php:539
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /users.json
+Client IP: 172.20.0.1
+
+
+2022-08-04 15:03:15 error: [Cake\Http\Exception\MissingControllerException] Controller class Articles.json could not be found. in /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Articles.json',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:334
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:72
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:315
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /articles.json
+Client IP: 172.22.0.1
+
+
+2022-08-04 15:03:32 error: [Cake\Http\Exception\MissingControllerException] Controller class Articles.json could not be found. in /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Articles.json',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:334
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:72
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:315
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /articles.json
+Client IP: 172.22.0.1
+
+
+2022-08-04 15:03:36 error: [Cake\Http\Exception\MissingControllerException] Controller class Articles.json could not be found. in /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Articles.json',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:334
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:72
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:315
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /articles.json
+Client IP: 172.22.0.1
+
+
+2022-08-04 15:12:05 error: [Cake\Http\Exception\MissingControllerException] Controller class Articles.json could not be found. in /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Articles.json',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:334
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:72
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:315
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /articles.json
+Client IP: 172.22.0.1
+
+

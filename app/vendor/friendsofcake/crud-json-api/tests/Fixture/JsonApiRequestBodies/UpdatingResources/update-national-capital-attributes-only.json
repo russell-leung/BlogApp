@@ -1,0 +1,10 @@
+{
+    "data": {
+        "type": "nationalCapitals",
+        "id": "6",
+        "attributes": {
+            "name": "Hollywood",
+            "description": "National capital of the cinematic world"
+        }
+    }
+}

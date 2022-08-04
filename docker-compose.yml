@@ -1,0 +1,24 @@
+version: '3.3'
+services:
+    cakephp:
+        ports:
+            - "${APACHE_UNSECURE_PORT}:80"
+        container_name: cakephp
+        image: quantumobject/docker-cakephp
+        volumes:
+            - './app:/var/www/'
+        environment:
+            - DB_ENV_MYSQL_USER=${MARIADB_USER}
+            - DB_ENV_MYSQL_PASSWORD=${MARIADB_PASSWORD}
+            - DB_ENV_MYSQL_DATABASE=${MARIADB_DATABASE_NAME}
+    db:
+        ports:
+            - "${MARIADB_EXTERNAL_PORT}:3306"
+        volumes:
+            - './data:/var/lib/mysql'
+        environment:
+            - MYSQL_DATABASE=${MARIADB_DATABASE_NAME}
+            - MYSQL_ROOT_PASSWORD=${MARIADB_ROOT_PASSWORD}
+            - MYSQL_USER=${MARIADB_USER}
+            - MYSQL_PASSWORD=${MARIADB_PASSWORD}
+        image: 'mariadb:latest'
