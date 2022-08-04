@@ -539,3 +539,35 @@ Request URL: /articles.json
 Client IP: 172.22.0.1
 
 
+2022-08-04 15:30:17 error: [Cake\Http\Exception\MissingControllerException] Controller class Articles.json could not be found. in /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Articles.json',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:334
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:72
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:315
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /articles.json
+Client IP: 172.22.0.1
+
+
