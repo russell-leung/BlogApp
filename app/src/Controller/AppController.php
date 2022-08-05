@@ -41,24 +41,25 @@ class AppController extends Controller
         parent::initialize();
 
         $this->loadComponent('RequestHandler');
-        // $this->loadComponent('Auth', [
-        //     'storage' => 'Memory',
-        //     'authenticate' => [
-        //         'Form' => [
-        //             'scope' => ['Users.group_id']
-        //         ],
-        //         'ADmad/JwtAuth.Jwt' => [
-        //             'userModel' => 'Users',
-        //             'fields' => [
-        //                 'username' => 'id'
-        //             ],
-        //             'parameter' => 'token',
-        //             'queryDatasource' => true
-        //         ]
-        //     ],
-        //     'unauthorizedRedirect' => false,
-        //     'checkAuthIn' => 'Controller.initialize',
-        // ]);
+        $this->loadComponent('Auth', [
+            'storage' => 'Memory',
+            'authenticate' => [
+                'Form' => [
+                    'scope' => ['Users.group_id']
+                ],
+                'ADmad/JwtAuth.Jwt' => [
+                    'userModel' => 'Users',
+                    'fields' => [
+                        'username' => 'id'
+                    ],
+                    'parameter' => 'token',
+                    'queryDatasource' => true
+                ]
+            ],
+            'unauthorizedRedirect' => false,
+            'checkAuthIn' => 'Controller.initialize',
+        ]);
+        $this->Auth->allow(['index', 'view']);
 
         /*
          * Enable the following component for recommended CakePHP form protection settings.

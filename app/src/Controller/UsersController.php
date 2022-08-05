@@ -31,7 +31,7 @@ class UsersController extends AppController
         parent::initialize();
         $this->loadModel('Users');
 
-        // $this->Auth->allow(['login', 'register', 'token']);
+        $this->Auth->allow(['login', 'add', 'token']);
         // $this->Authentication->addUnauthenticatedActions(['login', 'register', 'token']);
     }
 
@@ -101,7 +101,7 @@ class UsersController extends AppController
      *
      * @return void
      */
-    public function register() {
+    public function add() {
         $response = ['success' => false, 'msg' => "Invalid Request", 'errors' => '', 'token' => 'Null'];
         $user = $this->Users->newEmptyEntity();
         if ($this->request->is('post')) {
@@ -140,10 +140,10 @@ class UsersController extends AppController
      * @return void
      */
     public function index() {
-        // $users = $this->Users->find('all')->all();
-        // $this->set('users', $users);
-        // $this->viewBuilder()->setOption('serialize', ['users']);
-        // $this->set(compact('users'));
+        $users = $this->Users->find('all')->all();
+        $this->set('users', $users);
+        $this->viewBuilder()->setOption('serialize', ['users']);
+        $this->set(compact('users'));
     }
 	
 

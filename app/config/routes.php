@@ -99,18 +99,12 @@ $routes->scope('/', function (RouteBuilder $builder) {
 
 $routes->scope('/', function (RouteBuilder $builder) {
     
-    // Parse specified extensions from URLs
     $builder->setExtensions(['json']);
     
     // Connect API actions here.
-    // $builder->connect('/login', ['controller' => 'Users', 'action' => 'login', 'prefix' => 'api']);
-    // $builder->connect('/register', ['controller' => 'Users', 'action' => 'register', 'prefix' => 'api']);
-    // $builder->connect('/token', ['controller' => 'Users', 'action' => 'token', 'prefix' => 'api']);
-    // $builder->connect('/list', ['controller' => 'Users', 'action' => 'index', 'prefix' => 'api']);
-    // // $builder->connect('/user/:id', ['controller' => 'Api', 'action' => 'view', 'prefix' => 'api', 'id' => null], ['pass' => ['id']]);
-    // $builder->connect('/user/{id}', ['controller' => 'Users', 'action' => 'view', 'prefix' => 'api'])->setPass(['id'])->setPatterns(['id' => '[0-9]+']);;
-    // $builder->connect('/user/edit/{id}', ['controller' => 'Users', 'action' => 'edit', 'prefix' => 'api'])->setPass(['id'])->setPatterns(['id' => '[0-9]+']);;
-    // $builder->connect('/user/delete/{id}', ['controller' => 'Users', 'action' => 'delete', 'prefix' => 'api'])->setPass(['id'])->setPatterns(['id' => '[0-9]+']);;
+    $builder->connect('/login', ['controller' => 'Users', 'action' => 'login']);
+    $builder->connect('/get-token', ['controller' => 'Users', 'action' => 'token']);
+
 
     $builder->resources('Articles');
     $builder->resources('Users');
