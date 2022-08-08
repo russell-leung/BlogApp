@@ -55,15 +55,18 @@ class ArticlesController extends AppController
             $article = $this->Articles->newEntity($this->request->getData());
             if ($this->Articles->save($article)) {
                 $message = 'Saved';
+                $success = true;
             } else {
                 $message = ['Error', $article->getErrors()];
+                $success = false;
             }
             $this->set([
                 'message' => $message,
                 'article' => $article,
+                'success' => $success,
             ]);
         }
-        $this->viewBuilder()->setOption('serialize', ['article', 'message']);
+        $this->viewBuilder()->setOption('serialize', ['article', 'message', 'success']);
 
         $this->set(compact('article'));
     }
@@ -82,14 +85,17 @@ class ArticlesController extends AppController
             $article = $this->Articles->patchEntity($article, $this->request->getData());
             if ($this->Articles->save($article)) {
                 $message = 'Saved';
+                $success = true;
             } else {
                 $message = 'Error';
+                $success = false;
             }
             $this->set([
                 'message' => $message,
                 'article' => $article,
+                'success' => $success
             ]);
-            $this->viewBuilder()->setOption('serialize', ['article', 'message']);
+            $this->viewBuilder()->setOption('serialize', ['article', 'message', 'success']);
         }
         $this->set(compact('article'));
     }
@@ -106,10 +112,15 @@ class ArticlesController extends AppController
         $this->request->allowMethod(['delete']);
         $article = $this->Articles->get($id);
         $message = 'Deleted';
+        $success = true;
         if (!$this->Articles->delete($article)) {
             $message = 'Error';
+            $success = false;
         }
-        $this->set('message', $message);
-        $this->viewBuilder()->setOption('serialize', ['message']);
+        $this->set([
+            'message' => $message,
+            'success' => $success,
+        ]);
+        $this->viewBuilder()->setOption('serialize', ['message', 'success']);
     }
 }

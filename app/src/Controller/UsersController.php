@@ -32,7 +32,7 @@ class UsersController extends AppController
         $this->loadModel('Users');
 
         $this->Auth->allow(['login', 'add', 'token']);
-        // $this->Authentication->addUnauthenticatedActions(['login', 'register', 'token']);
+        $this->Authentication->addUnauthenticatedActions(['login', 'add', 'token', 'delete']);
     }
 
     /**
@@ -42,13 +42,14 @@ class UsersController extends AppController
      */
     public function token() {
         $this->request->allowMethod(['get', 'post']);
-        $response = ['success' => false, 'msg' => "Invalid Request", 'errors' => ''];
         $token = '';
         $result = $this->Authentication->getResult();
 
+        $response = ['success' => false, 'msg' => "Invalid Request", 'errors' => ''];
+
         if($result->isValid()){
             $key = Security::getSalt();
-            $response = ['success' => true, 'msg' => "Logged in successfully", 'errors' => ""];
+            $response = ['success' => true, 'msg' => "Token Generated", 'errors' => ""];
             $token = JWT::encode([
                 'alg' => 'HS256',
                 'id' => $result->getData()['id'],

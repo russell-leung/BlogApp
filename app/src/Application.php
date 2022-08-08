@@ -39,15 +39,13 @@ use Psr\Http\Message\ServerRequestInterface;
  * This defines the bootstrapping logic and middleware layers you
  * want to use in your application.
  */
-class Application extends BaseApplication
-{
+class Application extends BaseApplication implements AuthenticationServiceProviderInterface {
     /**
      * Load all the application configuration and bootstrap logic.
      *
      * @return void
      */
-    public function bootstrap(): void
-    {
+    public function bootstrap(): void {
         // Call parent to load bootstrap from files.
         parent::bootstrap();
 
@@ -64,7 +62,6 @@ class Application extends BaseApplication
         }
 
         // Load more plugins here
-        $this->addPlugin('Crud');
         $this->addPlugin('ADmad/JwtAuth');
     }
 
@@ -99,18 +96,48 @@ class Application extends BaseApplication
             // Parse various types of encoded request bodies so that they are
             // available as array through $request->getData()
             // https://book.cakephp.org/4/en/controllers/middleware.html#body-parser-middleware
-            ->add(new BodyParserMiddleware());
+            ->add(new BodyParserMiddleware())
+            ->add(new AuthenticationMiddleware($this));
 
             $csrf->skipCheckCallback(function ($request) {
-                // Skip token check for API URLs. --> need to find a better way to do this
-                if ($request->getParam('prefix') === 'api') {
-                    return true;
-                }
+                // Skip token check for API URLs.
                 return true;
             });
             $middlewareQueue->add($csrf);
 
         return $middlewareQueue;
+    }
+
+    /**
+     * Authentication Service method
+     * defines authentication use  for identifying users based off their email and password
+     * @param ServerRequestInterface $request
+     * @return AuthenticationService $service
+     */
+    public function getAuthenticationService(ServerRequestInterface $request): AuthenticationServiceInterface {
+        $service = new AuthenticationService();
+
+        $fields = [
+            'username' => 'email',
+            'password' => 'password'
+        ];
+        $service->loadAuthenticator('Authentication.Jwt', [
+            'returnPayload' => false,
+            'queryParam' => 'token',
+        ]);
+        $service->loadAuthenticator('Authentication.Form', [
+            'fields' => $fields,
+        ]);
+        $service->loadIdentifier('Authentication.JwtSubject',[
+            'tokenField' => 'id',
+            'dataField' => 'id'
+        ]);
+        $service->loadIdentifier('Authentication.Password', [
+            'returnPayload' => false,
+            'fields' => $fields,
+        ]);
+
+        return $service;
     }
 
     /**
@@ -120,8 +147,7 @@ class Application extends BaseApplication
      *
      * @return void
      */
-    protected function bootstrapCli(): void
-    {
+    protected function bootstrapCli(): void {
         try {
             $this->addPlugin('Bake');
         } catch (MissingPluginException $e) {

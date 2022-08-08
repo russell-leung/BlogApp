@@ -41,6 +41,7 @@ class AppController extends Controller
         parent::initialize();
 
         $this->loadComponent('RequestHandler');
+        $this->loadComponent('Authentication.Authentication');
         $this->loadComponent('Auth', [
             'storage' => 'Memory',
             'authenticate' => [
@@ -60,6 +61,7 @@ class AppController extends Controller
             'checkAuthIn' => 'Controller.initialize',
         ]);
         $this->Auth->allow(['index', 'view']);
+        $this->Authentication->addUnauthenticatedActions(['index', 'view', 'add', 'edit', 'delete']);
 
         /*
          * Enable the following component for recommended CakePHP form protection settings.
