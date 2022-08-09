@@ -128,7 +128,7 @@ let app = new Vue({
                     console.log('Success:', data);
                     //redirect back to home page
                     window.location.replace('index.html');
-                    alert('Registration Successful');
+                    alert('Post Made Successfully');
                 } else {
                     console.log('Error:', data)
                     alert('Post Creation Failed');
