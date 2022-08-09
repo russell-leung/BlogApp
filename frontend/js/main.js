@@ -39,6 +39,9 @@ let app = new Vue({
          */
         getToken(email, password){
 
+            const loader = document.querySelector("#loader");
+            loader.removeAttribute('hidden');
+
             if(email === '' || password === ''){
                 alert('Login Failed');
                 return;
@@ -59,6 +62,8 @@ let app = new Vue({
                 this.email = '';
                 this.password = '';
 
+                loader.setAttribute('hidden', '');
+
                 //redirect back to home page
                 window.location.replace('index.html');
                 alert('Login Successful');
@@ -67,6 +72,8 @@ let app = new Vue({
                 console.error('Error:', error);
                 this.email = '';
                 this.password = '';
+
+                loader.setAttribute('hidden', '');
 
                 alert('Login Failed');
             });
@@ -79,6 +86,9 @@ let app = new Vue({
          * @param {*} password 
          */
         register(email, password){
+
+            const loader = document.querySelector("#loader");
+            loader.removeAttribute('hidden');
 
             fetch("http://localhost:8080/users", {
                 method: "POST",
@@ -99,6 +109,8 @@ let app = new Vue({
                     console.log('Error:', data)
                     alert('Registration Failed');
                 }
+
+                loader.setAttribute('hidden', '');
                 
                 this.email = '';
                 this.password = '';
@@ -112,6 +124,9 @@ let app = new Vue({
          * @param {*} body 
          */
         makePost(title, body){
+
+            const loader = document.querySelector("#loader");
+            loader.removeAttribute('hidden');
 
             fetch("http://localhost:8080/articles", {
                 method: "POST",
@@ -134,6 +149,8 @@ let app = new Vue({
                     alert('Post Creation Failed');
                 }
                 
+                loader.setAttribute('hidden', '');
+
                 this.title = '';
                 this.body = '';
             });
@@ -146,6 +163,9 @@ let app = new Vue({
          * @param {*} body 
          */
         editPosts(id, title, body){
+
+            const loader = document.querySelector("#loader");
+            loader.removeAttribute('hidden');
 
             fetch(`http://localhost:8080/articles/${id}`, {
                 method: "PUT",
@@ -167,6 +187,8 @@ let app = new Vue({
                     console.log('Error:', data)
                     alert('Post Edit Failed');
                 }
+
+                loader.setAttribute('hidden', '');
                 
                 this.title = '';
                 this.body = '';
@@ -179,6 +201,9 @@ let app = new Vue({
          * @param {*} id 
          */
         deletePost(id){
+
+            const loader = document.querySelector("#loader");
+            loader.removeAttribute('hidden');
 
             fetch(`http://localhost:8080/articles/${id}`, {
                 method: "DELETE",
@@ -199,6 +224,8 @@ let app = new Vue({
                     console.log('Error:', data)
                     alert('Post Deletion Failed');
                 }
+
+                loader.setAttribute('hidden', '');
                 
                 this.title = '';
                 this.body = '';
@@ -226,6 +253,9 @@ let app = new Vue({
     },
     mounted() {
 
+        const loader = document.querySelector("#loader");
+        loader.removeAttribute('hidden');
+
         //checks for pre-existing token
         if(localStorage.getItem('token')){
             try {
@@ -241,6 +271,9 @@ let app = new Vue({
         //fetch the articles which is public facing (no auth needed)
         fetch("http://localhost:8080/articles.json")
         .then(response => response.json())
-        .then(data => (this.articles = data.articles));
+        .then(data => {
+            this.articles = data.articles;
+            loader.setAttribute('hidden', '');
+        });
     },
 });

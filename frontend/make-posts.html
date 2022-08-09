@@ -25,6 +25,8 @@
 
             <h1 class="title">Make Posts</h1>
 
+            <div hidden id="loader"></div>
+
             <form @submit.prevent="makePost(title, body)" class="form">
                 <label for="articleTitle">Title</label><br>
                 <input v-model="title" class="articleTitle" name="articleTitle" placeholder="post title"><br><br>

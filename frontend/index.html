@@ -28,6 +28,8 @@
             <h1 class="title">Blog App w/ Vue.js + CakePHP</h1>
             <h3 class="title">Welcome to my blog app</h3>
 
+            <div hidden id="loader"></div>
+
             <div v-for="article in articles" class="posts">
                 <h2>{{ article.title }}</h2>
                 <p> {{ article.body }} </p>

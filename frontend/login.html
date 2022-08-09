@@ -25,6 +25,8 @@
             
             <h1 class="title">Login</h1>
 
+            <div hidden id="loader"></div>
+
             <form @submit.prevent="getToken(email, password)" class="form">
                 <label for="email">Email</label><br>
                 <input v-model="email" class="email" name="email" placeholder="your email"><br><br>

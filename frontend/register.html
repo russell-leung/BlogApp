@@ -25,6 +25,8 @@
             
             <h1 class="title">Register</h1>
 
+            <div hidden id="loader"></div>
+
             <form @submit.prevent="register(email, password)" class="form">
 
                 <label for="email">Email</label><br>
