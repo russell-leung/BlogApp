@@ -8668,3 +8668,213 @@ Request URL: /login
 Client IP: 172.20.0.1
 
 
+2022-08-09 15:18:31 error: [UnexpectedValueException] Wrong number of segments in /var/www/vendor/firebase/php-jwt/src/JWT.php on line 92
+Stack Trace:
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:234
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:173
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:133
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:122
+- /var/www/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php:791
+- /var/www/src/Controller/UsersController.php:76
+- /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php:539
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:138
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /login
+Client IP: 172.20.0.1
+
+
+2022-08-09 15:18:36 error: [UnexpectedValueException] Wrong number of segments in /var/www/vendor/firebase/php-jwt/src/JWT.php on line 92
+Stack Trace:
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:234
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:173
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:133
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:122
+- /var/www/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php:791
+- /var/www/src/Controller/UsersController.php:76
+- /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php:539
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:138
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /login
+Client IP: 172.20.0.1
+
+
+2022-08-09 15:18:56 error: [UnexpectedValueException] Wrong number of segments in /var/www/vendor/firebase/php-jwt/src/JWT.php on line 92
+Stack Trace:
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:234
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:173
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:133
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:122
+- /var/www/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php:791
+- /var/www/src/Controller/UsersController.php:76
+- /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php:539
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:138
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /login
+Client IP: 172.20.0.1
+
+
+2022-08-09 15:24:25 error: [UnexpectedValueException] Wrong number of segments in /var/www/vendor/firebase/php-jwt/src/JWT.php on line 92
+Stack Trace:
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:234
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:173
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:133
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:122
+- /var/www/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php:791
+- /var/www/src/Controller/UsersController.php:76
+- /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php:539
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:138
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /login
+Client IP: 172.20.0.1
+
+
+2022-08-09 15:24:27 error: [UnexpectedValueException] Wrong number of segments in /var/www/vendor/firebase/php-jwt/src/JWT.php on line 92
+Stack Trace:
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:234
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:173
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:133
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:122
+- /var/www/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php:791
+- /var/www/src/Controller/UsersController.php:76
+- /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php:539
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:138
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /login
+Client IP: 172.20.0.1
+
+
+2022-08-09 15:24:41 error: [UnexpectedValueException] Wrong number of segments in /var/www/vendor/firebase/php-jwt/src/JWT.php on line 92
+Stack Trace:
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:234
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:173
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:133
+- /var/www/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php:122
+- /var/www/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php:791
+- /var/www/src/Controller/UsersController.php:76
+- /var/www/vendor/cakephp/cakephp/src/Controller/Controller.php:539
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /var/www/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /var/www/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:138
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/webroot/index.php:40
+
+Request URL: /login
+Client IP: 172.20.0.1
+
+

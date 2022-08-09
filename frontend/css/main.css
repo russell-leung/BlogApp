@@ -1,0 +1,72 @@
+h1.title {
+    text-align: center;
+}
+
+h3.title {
+    text-align: center;
+    font-weight: normal;
+}
+
+.posts {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 0 25% 1vw;
+    width: 50%;
+}
+
+nav {
+    background-color: aqua;
+    padding: 1vw;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 2vw;
+    padding: 1vw;
+}
+
+nav a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 25%;
+    text-align: center;
+    padding: 1vw 0;
+}
+
+button {
+    border-radius: 5%;
+    padding: 1vw 2vw;
+    background-color: white;
+}
+
+button:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.editPosts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 0;
+}
+
+.editPostsForm {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 40%;
+    margin: 0 30%;
+}
+
+.editBtn {
+    margin: 2vw 0;
+}
