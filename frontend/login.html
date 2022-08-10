@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/main.css">
-        <title>My VueJS app</title>
+        <title>Login</title>
     </head>
     <body>
         <div id="vueApp">
@@ -20,6 +20,7 @@
                 <a href="index.html">Home</a>
                 <a href="make-posts.html">Make-posts</a>
                 <a href="edit-posts.html">Edit-posts</a>
+                <a href="settings.html">Settings</a>
                 <a @click="logout()" href="#">Logout</a>
             </nav>
             
@@ -29,11 +30,11 @@
 
             <form @submit.prevent="getToken(email, password)" class="form">
                 <label for="email">Email</label><br>
-                <input v-model="email" class="email" name="email" placeholder="your email"><br><br>
+                <input v-model="email" class="email" name="email" placeholder="Your Email"><br><br>
 
 
                 <label for="password">Password</label><br>
-                <input v-model="password" class="password" name="password" placeholder="your password"><br><br>
+                <input v-model="password" class="password" name="password" placeholder="Your Password"><br><br>
 
                 <button>Submit</button>
             </form>

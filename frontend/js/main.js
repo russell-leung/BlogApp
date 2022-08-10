@@ -1,11 +1,10 @@
-//how to expect a 500 response???
-
 let app = new Vue({
     el: "#vueApp",
     data: {
         articles: null,
         token: '',
         loggedIn: false,
+        userID: null,
         email: '',
         password: '',
         title: '',
@@ -17,6 +16,11 @@ let app = new Vue({
          * Checks to see if user's token is valid, if so, it logs the user in
          */
         loginStatus(){
+
+            //make sure the token isnt null
+            if(this.token === '') {
+                return;
+            }
 
             //request to api to check token
             fetch("http://localhost:8080/login", {
@@ -58,7 +62,8 @@ let app = new Vue({
             .then((data) => {
                 console.log('Success:', data);
                 this.token = data.token;
-                this.saveToken();
+                this.userID = data.id;
+                this.saveUser();
                 this.email = '';
                 this.password = '';
 
@@ -218,7 +223,7 @@ let app = new Vue({
                 if(data.success){
                     console.log('Success:', data);
                     //refresh
-                    window.location.reload()
+                    window.location.reload();
                     alert('Post Deleted');
                 } else {
                     console.log('Error:', data)
@@ -226,9 +231,6 @@ let app = new Vue({
                 }
 
                 loader.setAttribute('hidden', '');
-                
-                this.title = '';
-                this.body = '';
             });
 
         },
@@ -238,7 +240,8 @@ let app = new Vue({
          */
         logout() {
             this.token = '';
-            this.saveToken();
+            this.userID = '';
+            this.saveUser();
             window.location.replace('index.html');
             alert('Successfully Logged Out!');
         },
@@ -246,22 +249,58 @@ let app = new Vue({
         /**
          * saves token to persistant memory
          */
-        saveToken(){
-            const parsed = JSON.stringify(this.token);
-            localStorage.setItem("token", parsed);
-        }
+        saveUser(){
+            localStorage.setItem("token", JSON.stringify(this.token));
+            localStorage.setItem("userID", JSON.stringify(this.userID));
+        },
+
+        /**
+         * delete user account
+         */
+        deleteAccount(){
+
+            const loader = document.querySelector("#loader");
+            loader.removeAttribute('hidden');
+
+            fetch(`http://localhost:8080/users/${this.userID}`, {
+                method: "DELETE",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${this.token}`,
+                },
+            }).then((response) => response.json())
+            .then((data) => {
+
+                if(data.success){
+                    console.log('Success:', data);
+                    //logs user out ensuring statless auth doesn't continue
+                    this.logout();
+                    alert('User Deleted');
+                } else {
+                    console.log('Error:', data)
+                    alert('User Deletion Failed');
+                }
+
+                loader.setAttribute('hidden', '');
+                
+            });
+        },
     },
     mounted() {
 
+        //enables loader while pending api response
         const loader = document.querySelector("#loader");
         loader.removeAttribute('hidden');
 
-        //checks for pre-existing token
+        //checks for pre-existing user
         if(localStorage.getItem('token')){
             try {
                 this.token = JSON.parse(localStorage.getItem("token"));
+                this.userID = JSON.parse(localStorage.getItem("userID"));
             } catch(e) {
                 localStorage.removeItem('token');
+                localStorage.removeItem('id');
             }
         }
 
@@ -273,6 +312,7 @@ let app = new Vue({
         .then(response => response.json())
         .then(data => {
             this.articles = data.articles;
+            //rehides loader after api sends response
             loader.setAttribute('hidden', '');
         });
     },

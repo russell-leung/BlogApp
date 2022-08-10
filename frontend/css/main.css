@@ -88,7 +88,7 @@ button:hover {
     width: 80px;
     height: 80px;
     border: 2px solid #f3f3f3;
-    border-top: 3px solid blue;
+    border-top: 3px solid #015a6b ;
     border-radius: 100%;
     will-change: transform;
     animation: spin 1s infinite linear
@@ -102,4 +102,18 @@ button:hover {
       transform: rotate(360deg);
     }
   }
+
+  .settingsBtns {
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 25%;
+  }
   
+  .settingsBtns button {
+    width: 75%;
+    padding: 2vw 0;
+    margin: 1vw 12.5%;
+    border-radius: 5%;
+  }

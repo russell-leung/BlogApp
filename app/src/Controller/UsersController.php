@@ -45,11 +45,11 @@ class UsersController extends AppController
         $token = '';
         $result = $this->Authentication->getResult();
 
-        $response = ['success' => false, 'msg' => "Invalid Request", 'errors' => ''];
+        $response = ['success' => false, 'msg' => "Invalid Request", 'errors' => '', 'id' => ''];
 
         if($result->isValid()){
             $key = Security::getSalt();
-            $response = ['success' => true, 'msg' => "Token Generated", 'errors' => ""];
+            $response = ['success' => true, 'msg' => "Token Generated", 'errors' => '', 'id' => $result->getData()['id']];
             $token = JWT::encode([
                 'alg' => 'HS256',
                 'id' => $result->getData()['id'],
@@ -61,8 +61,8 @@ class UsersController extends AppController
         }
 
         extract($response);
-        $this->set(compact('success', 'msg', 'errors', 'token'));
-        $this->viewBuilder()->setOption('serialize', ['success', 'msg', 'errors', 'token']);
+        $this->set(compact('success', 'msg', 'errors', 'token', 'id'));
+        $this->viewBuilder()->setOption('serialize', ['success', 'msg', 'errors', 'token', 'id']);
     }
 
     /**
