@@ -286,6 +286,57 @@ let app = new Vue({
                 
             });
         },
+
+        /**
+         * opens form popup for email change
+         */
+        openForm() {
+            document.querySelector("#form-popup").style.display = "flex";
+        },
+
+        /**
+         * closes form popup for email change
+         */
+        closeForm() {
+            document.querySelector("#form-popup").style.display = "none";
+        },
+        
+        /**
+         * change user email
+         * @param {*} email 
+         */
+        changeEmail(email) {
+
+            const loader = document.querySelector("#loader");
+            loader.removeAttribute('hidden');
+
+            fetch(`http://localhost:8080/users/${this.userID}`, {
+                method: "PUT",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${this.token}`,
+                },
+                body: JSON.stringify({'email': email}),
+            }).then((response) => response.json())
+            .then((data) => {
+
+                if(data.success){
+                    console.log('Success:', data);
+                    //refresh
+                    window.location.reload()
+                    alert(`User Email Edit Successful, New email: ${email}`);
+                } else {
+                    console.log('Error:', data)
+                    alert('User Email Edit Failed');
+                }
+
+                loader.setAttribute('hidden', '');
+                
+                this.email = '';
+            });
+        },
+
     },
     mounted() {
 

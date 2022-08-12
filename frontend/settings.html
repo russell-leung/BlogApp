@@ -30,7 +30,22 @@
 
             <div class="settingsBtns">
                 <button @click="deleteAccount()">Delete Account</button>
+                <button @click="openForm()">Change Email</button>
             </div>
+
+            <div id="form-popup">
+                <div id="popup-content">
+                <form  @submit.prevent="changeEmail(email)">
+                  <label for="email"><b>New Email: </b></label><br>
+                  <input name="email" v-model="email" placeholder="Your Email" required><br><br>
+              
+                  <button>Submit</button>
+                  <button type="button" @click="closeForm()">Close</button>
+                </form>
+                </div>
+            </div>
+
+              <div hidden id="loader"></div>
 
         </div>
 
